@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #E28413;
+    --gray: #E6E6E6;
+}
+
+.flex {
+    display: flex;
+}
+
+svg {
+    width: 20px;
+    fill: var(--primary-color);
+}
+
+input {
+    padding: 1em;
+    background-color: var(--gray);
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    background-color: var(--primary-color);
+    padding: 1em;
+    border-radius: 5px;
+    color: white;
+    transition: 1s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background-color: #c27210;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 2em;
+    position: relative;
+    background-image: url(images/background-image.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.2em;
+}
+
+.or p {
+    color: white;
+}
+
+.signin {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.have-account {
+    align-items: center;
+    gap: .5em;
+}
+
+.backgroundimage {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.or {
+    gap: 1em;
+    align-items: center;
+}
+
+.or p {
+    color: gray;
+}
+
+.line {
+    height: 1px;
+    width: 160px;
+    background-color: var(--gray);
+}
+
+.form {
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+}
+
+.socials {
+    align-items: center;
+    gap: 1em;
+}
+
+.social {
+    display: grid;
+    place-content: center;
+    width: 70px;
+    height: 50px;
+    background-color: var(--gray);
+    border-radius: 4px;
+    transition: 1s ease;
+}
+
+.social:hover {
+    opacity: .6;
+}
+
+@media only screen and (min-width:1440px) {
+    .wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .line {
+        width: 80px;
+    }
+
+    .container {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width:345px) {
+    p {
+        font-size: .8em;
+    }
+
+    .signin {
+        font-size: 1em;
+    }
+}
